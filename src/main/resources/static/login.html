@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;width:100%;margin:0 auto;">
+<head>
+	<meta charset="UTF-8">
+	<title>药品管理系统</title>
+	<link rel="stylesheet" href="common/bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" href="common/bootstrap/css/bootstrapValidator.css"/>
+	<script type="text/javascript" src="common/bootstrap/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="common/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="common/bootstrap/js/bootstrapValidator.js"></script>
+	<script src="common/bootstrap/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+		.container{
+			width:90%;
+			padding-top: 30px;
+		}
+	</style>
+</head>
+<body style="height: 100%;width:100%;margin:0 auto;background:url('log.jpg');background-size:100% 100%;background-repeat: no-repeat;">
+<div style="">
+	<div style="height: 120px;width:100%;"></div>
+	<div class="col-sm-12" style="text-align: center;font-size: 25px;line-height: 75px;">
+		<div style="background:white;width: 500px;margin: 0 auto;">药品管理系统</div>
+	</div>
+	<!-- /header -->
+	<div style="height:430px;width:500px;margin:0 auto;background:white;">
+		<form class="form-horizontal" id="form-login" style="margin:0 auto;">
+			<div style="width: 100%;">
+				<div style="margin-left:75px;width: 350px;">
+					<input type="text" class="form-control" name="phone" placeholder="输入手机号" style="height:40px;"/>
+				</div>
+			</div>
+			<div style="width: 100%;margin-top: 30px;">
+				<div style="margin-left:75px;width: 350px;">
+					<input type="password" class="form-control" placeholder="输入密码" name="password" style="height:40px;"/>
+				</div>
+			</div>
+			<div style="width: 100%;margin-top: 20px;">
+				<div style="margin-left:75px;width: 350px;">
+					<input type="radio" name="type" id="radio-type-kehu" checked style="height:30px;width:30px;">客户
+					<input type="radio" name="type" id="radio-type-ygong" style="height:30px;width:30px;">员工
+				</div>
+			</div>
+			<div style="width: 100%;margin-top: 20px;">
+				<label class="col-sm-2 control-label"></label>
+				<div style="margin-left:75px;width: 350px;">
+					<button type="button" id="btn-login" class="btn btn-primary btn-block">登录</button>
+				</div>
+				<div style="margin-left:75px;width: 350px;margin-top:20px;">
+					<a href="register.html">
+						<button type="button" class="btn btn-primary btn-block">用户注册</button>
+					</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<script type="text/javascript" src="js/login.js"> </script>
+</body>
+</html>
